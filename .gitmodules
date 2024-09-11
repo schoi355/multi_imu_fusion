@@ -1,0 +1,3 @@
+[submodule "allan-variance"]
+	path = allan-variance
+	url = https://github.com/nmayorov/allan-variance.git
