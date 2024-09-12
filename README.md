@@ -4,6 +4,10 @@ This repository contains the code for multi-IMU sensor fusion. This software is 
 
 # Depndencies
 
+- [numpy](https://numpy.org/)
+- [scipy](https://scipy.org/)
+- [matplotlib](https://matplotlib.org/)
+- [tqdm](https://pypi.org/project/tqdm/2.2.3/)
 - [allan-variance](https://github.com/nmayorov/allan-variance)
 
 ## Bibtex
