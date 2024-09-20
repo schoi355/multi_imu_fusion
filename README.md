@@ -2,7 +2,7 @@
 
 This repository contains the code for multi-IMU sensor fusion. This software is an implementation of our paper, *Sensor Fusion for Distributed Inertial Measurement Units*, by Su-Yeon Choi, Holly Dinkel, David Hanley, and Timothy Bretl. All code is implemented in Python.
 
-# Depndencies
+# Dependencies
 
 - [numpy](https://numpy.org/)
 - [scipy](https://scipy.org/)
