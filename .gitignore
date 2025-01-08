@@ -2,5 +2,4 @@ __pycache__/
 .DS_Store
 MagPIE/bag_to_csv.__py
 MagPIE/EKF_multi_imu2.ipynb
-MagPIE/dataset
 data
