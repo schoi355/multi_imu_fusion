@@ -1,14 +1,21 @@
 # Sensor Fusion for Distributed Inertial Measurement Units
 
-This repository contains the code for multi-IMU sensor fusion. This software is an implementation of our paper, *Sensor Fusion for Distributed Inertial Measurement Units*, by Su-Yeon Choi, Holly Dinkel, David Hanley, and Timothy Bretl. All code is implemented in Python.
+This repository contains the code for multi-IMU sensor fusion. This software is an implementation of our paper, *Sensor Fusion for Distributed Inertial Measurement Units*, by Su-Yeon Choi, Holly Dinkel, David Hanley, and Timothy Bretl. All code is implemented in Python, and the paper preprint is shared [**here**](https://hollydinkel.github.io/assets/pdf/AAS2025.pdf). 
 
-# Dependencies
+## Motivation
 
-- [numpy](https://numpy.org/)
-- [scipy](https://scipy.org/)
-- [matplotlib](https://matplotlib.org/)
-- [tqdm](https://pypi.org/project/tqdm/2.2.3/)
-- [allan-variance](https://github.com/nmayorov/allan-variance)
+The measurements of multiple MEMS IMUs are fused into a virtual IMU. The fusion algorithm takes time-synchronized measurements from an arbitrary number of sensors and produce one virtual measurement estimate. Allan variance is used to evaluate ARW, VRW, and RRW noise performance for the estimated angular velocity and linear acceleration measurements. The noise performance of the virtual sensor measurement estimates and of the single-sensor measurements is compared. Sensor fusion is demonstrated with the simulated data of up to 18 MEMS IMUs and for real data collected by 5 MEMS IMUs.
+
+![Distriubted IMU Test Platform](./images/boxer.svg)
+**Figure 1:** Five IMUs, one RGBD camera, and a device running Google Tango are mounted on a mobile robot to collect data for sensor fusion and navigation algorithm testing.
+
+<p align="center">
+  <img src="./images/position.png" width="200" />
+  <img src="./images/euler.png" width="200" />
+  <img src="./images/velocity.png" width="200" />
+</p>
+
+**Figure 2:** Comparing state estimation of a single MEMS IMU to the virtual IMU fusing measurements from five real sensors on data collected with the ground robot in a hallway demonstrates the significant deviation and error accumulation IMU-only state estimation introduces.
 
 ## Bibtex
 
