@@ -10,9 +10,9 @@ The measurements of multiple MEMS IMUs are fused into a virtual IMU. The fusion 
 **Figure 1:** Five IMUs, one RGBD camera, and a device running Google Tango are mounted on a mobile robot to collect data for sensor fusion and navigation algorithm testing.
 
 <p align="center">
-  <img src="./images/position.png" width="200" />
-  <img src="./images/euler.png" width="200" />
-  <img src="./images/velocity.png" width="200" />
+  <img src="./images/position.png" width="250" />
+  <img src="./images/euler.png" width="250" />
+  <img src="./images/velocity.png" width="250" />
 </p>
 
 **Figure 2:** Comparing state estimation of a single MEMS IMU to the virtual IMU fusing measurements from five real sensors on data collected with the ground robot in a hallway demonstrates the significant deviation and error accumulation IMU-only state estimation introduces.
