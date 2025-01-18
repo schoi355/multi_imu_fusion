@@ -3,3 +3,5 @@ __pycache__/
 MagPIE/bag_to_csv.__py
 MagPIE/EKF_multi_imu2.ipynb
 data
+*.eps
+frames*
