@@ -13,9 +13,10 @@ class ImageSaver:
         self.image_topic = "/camera/color/image_raw"
         self.image_sub = rospy.Subscriber(self.image_topic, Image, self.image_callback)
         self.bridge = CvBridge()
-        self.save_dir = "/home/su/MagPIE/Talbot_UGV/magpie2Dataset_8/mav0/cam0/data"
-        self.csv_file_path = '/home/su/MagPIE/Talbot_UGV/magpie2Dataset_8/mav0/cam0/data.csv'
-        self.txt_file_path = '/home/su/Dev/ORB_SLAM3/Examples/Monocular-inertial/magpie_TimeStamps/traj_08.txt'
+        self.save_dir =      "/home/su/MagPIE/CSL_WLK/magpie2Dataset_1/mav0/cam0/data"
+        self.csv_file_path = "/home/su/MagPIE/CSL_WLK/magpie2Dataset_1/mav0/cam0/data.csv"
+        self.txt_file_path = "/home/su/Dev/ORB_SLAM3/Examples/Monocular-Inertial/magpie_TimeStamps/csl_traj_01.txt"
+
         if not os.path.exists(self.save_dir):
             os.makedirs(self.save_dir)
         self.counter = 0
