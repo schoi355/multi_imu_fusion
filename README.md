@@ -17,6 +17,12 @@ The measurements of multiple MEMS IMUs are fused into a virtual IMU. The fusion 
 
 **Figure 2:** Comparing state estimation of a single MEMS IMU to the virtual IMU fusing measurements from five real sensors on data collected with the ground robot in a hallway demonstrates the significant deviation and error accumulation IMU-only state estimation introduces.
 
+## Learn More
+
+The [slideshow presentation](https://www.youtube.com/watch?v=WG_KLh2uPLE) delivered at the 2025 AAS/AIAA Space Flight Mechanics Meeting in Kaua'i, HI, USA is shared for further motivation and information about this project.
+
+[![slideshow presentation](https://img.youtube.com/vi/WG_KLh2uPLE/0.jpg)](https://www.youtube.com/watch?v=WG_KLh2uPLE)
+
 ## Bibtex
 
 ```bash
