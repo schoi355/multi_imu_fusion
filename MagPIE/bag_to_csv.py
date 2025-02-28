@@ -9,13 +9,13 @@ class ROSNode:
     def __init__(self):
         rospy.init_node('ros_to_csv_node', anonymous=True)
         
-        self.csv_file_path = 'dataset/Ground_Truth_Evaluation/magpie2Dataset_loc000_imu1.csv'
+        self.csv_file_path = 'dataset/Talbot_UGV/magpie2Dataset_2_imu5.csv'
         file_exists = os.path.isfile(self.csv_file_path)
         self.csv_file = open(self.csv_file_path, mode='a')
         self.csv_writer = csv.writer(self.csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
         # rospy.Subscriber('/tf', TFMessage, self.tf_callback)
-        rospy.Subscriber('/imu_chatter_B1', Imu, self.imu_callback)
+        rospy.Subscriber('/imu_chatter_B5', Imu, self.imu_callback)
         # rospy.Subscriber('/tango/transform/area_description_T_start_of_service', TransformStamped, self.tango_callback)
         # rospy.Subscriber('/tango/transform/start_of_service_T_device', TransformStamped, self.tango_callback)
         
